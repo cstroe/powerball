@@ -30,5 +30,13 @@ public class AllTests {
             PowerballPickTest test = new PowerballPickTest();
             test.no_null_white_balls_allowed();
         }
+        {
+            PowerballPickTest test = new PowerballPickTest();
+            test.defensive_copy_of_whiteballs_array_in_getter();
+        }
+        {
+            PowerballPickTest test = new PowerballPickTest();
+            test.defensive_copy_of_whiteballs_array_in_constructor();
+        }
     }
 }

@@ -1,5 +1,7 @@
 package im.wh.powerball;
 
+import java.util.Arrays;
+
 public class PowerballPick {
     private WhiteBall[] whiteBalls;
     private OrangeBall orangeBall;
@@ -17,6 +19,14 @@ public class PowerballPick {
             }
         }
         this.orangeBall = orangeBall;
-        this.whiteBalls = whiteBalls;
+        this.whiteBalls = Arrays.copyOf(whiteBalls, whiteBalls.length);
+    }
+
+    public WhiteBall[] getWhiteBalls() {
+        return Arrays.copyOf(whiteBalls, whiteBalls.length);
+    }
+
+    public OrangeBall getOrangeBall() {
+        return orangeBall;
     }
 }
