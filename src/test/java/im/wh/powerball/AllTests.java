@@ -18,5 +18,17 @@ public class AllTests {
             OrangeBallTest test = new OrangeBallTest();
             test.disallow_invalid_values();
         }
+        {
+            PowerballPickTest test = new PowerballPickTest();
+            test.correct_number_of_arguments();
+        }
+        {
+            PowerballPickTest test = new PowerballPickTest();
+            test.no_null_orange_ball_allowed();
+        }
+        {
+            PowerballPickTest test = new PowerballPickTest();
+            test.no_null_white_balls_allowed();
+        }
     }
 }
