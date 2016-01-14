@@ -1,11 +1,7 @@
 package im.wh.powerball;
 
-public class WhiteBall {
-    private int value;
+public class WhiteBall extends Ball {
     public WhiteBall(int val) {
-    }
-
-    public int getValue() {
-        return value;
+        super(val, 1, 69);
     }
 }
