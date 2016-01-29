@@ -13,4 +13,13 @@ public abstract class Ball {
     public int getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        if(value < 10) {
+            return " " + Integer.toString(value);
+        } else {
+            return Integer.toString(value);
+        }
+    }
 }
