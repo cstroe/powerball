@@ -1,4 +1,4 @@
-package im.wh.powerball;
+package com.github.cstroe.powerball;
 
 import java.util.Arrays;
 

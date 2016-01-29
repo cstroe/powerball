@@ -1,4 +1,4 @@
-package im.wh.powerball;
+package com.github.cstroe.powerball;
 
 public class WhiteBall extends Ball {
     public static final int LOW = 1;
