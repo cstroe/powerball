@@ -11,5 +11,7 @@ public class GenerateWinningPick {
             System.out.printf("%3d.  ", i);
             System.out.println(gen.get());
         }
+
+        System.out.println("\n\n");
     }
 }
