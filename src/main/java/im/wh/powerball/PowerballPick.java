@@ -19,6 +19,9 @@ public class PowerballPick {
             }
         }
         this.orangeBall = orangeBall;
+
+        Arrays.sort(whiteBalls, (o1, o2) -> Integer.compare(o1.getValue(),o2.getValue()));
+
         this.whiteBalls = Arrays.copyOf(whiteBalls, whiteBalls.length);
     }
 
@@ -28,5 +31,14 @@ public class PowerballPick {
 
     public OrangeBall getOrangeBall() {
         return orangeBall;
+    }
+
+    @Override
+    public String toString() {
+        String str = "";
+        for(WhiteBall wb : whiteBalls) {
+            str += wb + " ";
+        }
+        return str + "  " + orangeBall;
     }
 }
